@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		591F63A92836149E0099EF7C /* RESTfulConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F63A82836149E0099EF7C /* RESTfulConfig.swift */; };
 		591F63AB28361F7B0099EF7C /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F63AA28361F7B0099EF7C /* SocketService.swift */; };
+		591F63AF283CB0A30099EF7C /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F63AC283CB0A30099EF7C /* NetworkProtocol.swift */; };
+		591F63B1283CB0A30099EF7C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F63AE283CB0A30099EF7C /* NetworkService.swift */; };
 		595502ED2834CC5A007544FE /* RequestDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595502EC2834CC5A007544FE /* RequestDataModel.swift */; };
 		595502F82834DCAD007544FE /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595502F72834DCAD007544FE /* AppColor.swift */; };
 		59BB86E128333DBF00A76EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB86E028333DBF00A76EE0 /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 		282212AAB7FF580457FD3791 /* Pods-SocketSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketSwift.release.xcconfig"; path = "Target Support Files/Pods-SocketSwift/Pods-SocketSwift.release.xcconfig"; sourceTree = "<group>"; };
 		591F63A82836149E0099EF7C /* RESTfulConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTfulConfig.swift; sourceTree = "<group>"; };
 		591F63AA28361F7B0099EF7C /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		591F63AC283CB0A30099EF7C /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		591F63AE283CB0A30099EF7C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		595502EC2834CC5A007544FE /* RequestDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDataModel.swift; sourceTree = "<group>"; };
 		595502F72834DCAD007544FE /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		59BB86DD28333DBF00A76EE0 /* SocketSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,8 @@
 		595502EE2834CCA7007544FE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				591F63AC283CB0A30099EF7C /* NetworkProtocol.swift */,
+				591F63AE283CB0A30099EF7C /* NetworkService.swift */,
 				591F63AA28361F7B0099EF7C /* SocketService.swift */,
 			);
 			path = Service;
@@ -313,8 +319,10 @@
 			files = (
 				59BB86F728333EDF00A76EE0 /* BaseTableViewCell.swift in Sources */,
 				59BB87032833516900A76EE0 /* SocketDataCell.swift in Sources */,
+				591F63AF283CB0A30099EF7C /* NetworkProtocol.swift in Sources */,
 				59BB86E528333DBF00A76EE0 /* ViewController.swift in Sources */,
 				59BB87062833529100A76EE0 /* TransactionItem.swift in Sources */,
+				591F63B1283CB0A30099EF7C /* NetworkService.swift in Sources */,
 				59BB86FC2833422300A76EE0 /* DataViewModel.swift in Sources */,
 				59BB86E128333DBF00A76EE0 /* AppDelegate.swift in Sources */,
 				59BB86FA2833418800A76EE0 /* CellConfigurator.swift in Sources */,

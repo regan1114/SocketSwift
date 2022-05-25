@@ -7,5 +7,6 @@ target 'SocketSwift' do
 
   # Pods for SocketSwift
   pod 'SnapKit'
+  pod 'Alamofire', '~> 4.4'
   pod 'SVProgressHUD'
 end

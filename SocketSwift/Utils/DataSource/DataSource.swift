@@ -234,12 +234,9 @@ class DataSource : NSObject , UITableViewDataSource , UITableViewDelegate , UISc
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        let cellConfigurator:CellConfiguratorType!
-        if sections.count > 0 {
-            cellConfigurator = sections[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]
-        }else{
-            cellConfigurator = items[(indexPath as NSIndexPath).row]
-        }
+        let cellConfigurator:CellConfiguratorType! = sections.count > 0 ?
+        sections[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row] :
+        items[(indexPath as NSIndexPath).row]
         
         if let editCell = self.configureEditCell {
             editCell(cellConfigurator.cellViewModel() , editingStyle , indexPath)

@@ -6,14 +6,14 @@
 //
 
 import Foundation
-import AlamofireDomain
+import Alamofire
 
-public typealias CompletionHandler = ((DataResponse<Any>) -> Void)
+public typealias CompletionHandler = ((DefaultDataResponse) -> Void)
 
-public typealias ResponseErrorHandler = ((DataResponse<Any>) -> Void)
+public typealias ResponseErrorHandler = ((DefaultDataResponse) -> Void)
 
 public protocol NetworkProtocol {
     func post(_ dataModel:RequestDataModel,completionHandler:@escaping CompletionHandler,responseErrorHandler:@escaping ResponseErrorHandler)
-    
+
     func get(_ dataModel :RequestDataModel,completionHandler:@escaping CompletionHandler, responseErrorHandler:@escaping ResponseErrorHandler)
 }

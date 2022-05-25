@@ -5,6 +5,7 @@
 //  Created by regan on 2022/5/18.
 //
 import UIKit
+import Alamofire
 
 public enum HTTPParamType {
     case array
@@ -28,13 +29,11 @@ extension Array: HTTPParameterProtocol {
 }
 
 public class RequestDataModel:NSObject {
-    public typealias Parameters = [String: Any]
-    
     var url : URL?
     
     var parameters:Parameters = [:]
     
-    var headers:[String:String] = [:]
+    var headers:HTTPHeaders? = nil
     
     var data : Data?
     
